@@ -127,12 +127,12 @@ nav ul li a:hover::after {/* element in css na het daadwerkelijke element in htm
 
 .contact-right label {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* ruimte buiten een element*/
 }
 
 .contact-right input,
 .contact-right textarea {
-    padding: 10px;
+    padding: 10px;/* ruimte binnen een element*/
     margin-bottom: 15px; /* ruimte buiten een element*/
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -165,8 +165,8 @@ nav ul li a:hover::after {/* element in css na het daadwerkelijke element in htm
 }
 
 .social-icons a {
-    margin-right: 15px; /*ruiimte uite element*/
-    transition: color 0.3s ease; /*seconde van transitie*/
+    margin-right: 15px; /*ruiimte buite element*/
+    transition: color 0.3s ease; /*seconde van transitie (dus hoelang het duurt tot ie verschijnt*/
 }
 
 .social-icons a:hover {

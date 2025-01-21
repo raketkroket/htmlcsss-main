@@ -59,10 +59,10 @@ body { /* styling*/
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*  het scherm kleiner is dan 768 pixels.. doe dn dit*/
     .about-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* zet alles ondr elkaar in plaats vn naast elkaar */
+        text-align: center; /* zet alle tekst in het midde van de scherm */
     }
 
     .about-image img {
@@ -110,18 +110,18 @@ nav ul li {
 
 nav ul li a {
     color: aliceblue;
-    text-decoration: none;
+    text-decoration: none; /* geen onderlijn bijv*/
     font-size: 23px;
     position: relative;
 }
 
 nav ul li a::after { /* element in css na het daadwerkelijke element in html dus in die geval die blauwe streep */
     content: ' ';
-    width: 0;
+
     height: 3px;
     background: #074d63;
     position: absolute;
-    left: 0;
+
     bottom: -6px;
     transition: 0.5s;
 }
