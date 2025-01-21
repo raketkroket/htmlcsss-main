@@ -1,0 +1,189 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body { /* styling*/
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #2b2b2b;
+    color: aliceblue;
+    line-height: 1.6;
+}
+
+/* Navigation Section */
+nav {
+    display: flex;
+   
+    justify-content: space-between;
+    position: fixed; /* knoppe blijve bove ook als je scrollt*/
+    z-index: 1000; /*zorgt ervoor dat eht bove s*/
+    padding: 20px 50px;
+    width: 100%;
+    right: 20px; /* Align  */
+}
+
+nav ul { /*ongenummerde lijst*/
+    justify-content: center;  /* inhoud wordt gecentreerd (verticaal)*/
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;  
+    z-index: 1000; /* zorgt ervoor dat dit boven alle anderen elementen wordt weergeven*/
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after { /* element in css na het daadwerkelijke element in html dus in die geval die blauwe streep */
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #074d63;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {/* element in css na het daadwerkelijke element in html dus in die geval die blauwe streep */
+    width: 100%;
+}
+
+/* Header Section */
+#header {
+    width: 100%; /*breedte*/
+    height: 100vh; /* hoogte */
+    background-color: #2b2b2b; /*achtergrond kleur*/
+    background-size: cover;
+    background-position: center center;
+    padding-left: 50px; /* ruimte*/
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* inhoud wordt gecentreerd (verticaal)*/
+    align-items: center; /* alles wordt horizontaal gecentreerd*/
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* alles wordt horizontaal gecentreerd*/
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;  /* inhoud wordt gecentreerd (verticaal) en ruimte wordt verdeeld die binnen de flexbox staan*/
+    width: 80%;
+    max-width: 1200px;
+}
+
+.contact-left, .contact-right {
+    width: 48%; 
+}
+
+.sub-title { /* extra informatie (soort titel)*/
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-right { /* contact at the right */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 20px; /* ruimte binnen een element*/
+}
+
+.contact-right h2 {
+    font-size: 28px;
+    color: #c4bbb1;
+    margin-bottom: 20px; /* ruimte buiten een element*/
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* ruimte buiten een element*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-right textarea {
+    resize: vertical;
+}
+
+.submit-btn { /*verstuur knop style*/
+    padding: 12px 20px;
+    background-color: #074d63;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover { /*kleur van streep*/
+    background-color: #052e3d;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px; /*ruiimte uite element*/
+    transition: color 0.3s ease; /*seconde van transitie*/
+}
+
+.social-icons a:hover {
+    color: #074d63;
+}
+
+footer { /*copyright teksr style*/
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer p { /*copyright teksr grootte*/
+    font-size: 16px;
+}

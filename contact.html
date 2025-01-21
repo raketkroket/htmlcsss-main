@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/9a8a4139e1.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+   
+   <!-- knoppe-->
+   <nav>
+      <img src="chasdes.png" class="logo" alt="Logo">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="Over-mij.html">About Me</a></li>
+         <li><a href="services.html">Services</a></li>
+      </ul>
+   </nav>
+
+   <!-- bovenaan -->
+   <div id="header">
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+               <!-- informatie contact-->
+               <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><strong>Phone:</strong> 0614736389</p>
+                  <p><strong>Email:</strong> contact@example.com</p>
+
+                  <div class="social-icons">
+                     <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                     <a href="#" aria-label="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+                  </div>
+               </div>
+               
+               <!-- comtact-->
+               <div class="contact-right">
+                  <h2>Send a Message</h2>
+                  <form action="https://formspree.io/f/mrbgvvje" method="POST">
+                     <!-- naam zette -->
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+                     
+                     <!-- email zette -->
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+                     
+                     <!-- bericht -->
+                     <label for="message">Message:</label>
+                     <textarea id="message" name="message" rows="4" required></textarea>
+                     
+                     <!-- verstuur knop-->
+                     <button type="submit" class="submit-btn">Send Message</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- onderaan -->
+   <footer>
+      <div class="footer-content">
+         <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      </div>
+   </footer>
+</body>
+</html>
