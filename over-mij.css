@@ -117,11 +117,11 @@ nav ul li a {
 
 nav ul li a::after { /* element in css na het daadwerkelijke element in html dus in die geval die blauwe streep */
     content: ' ';
-
+width: 0;
     height: 3px;
     background: #074d63;
     position: absolute;
-
+height: 0;
     bottom: -6px;
     transition: 0.5s;
 }
