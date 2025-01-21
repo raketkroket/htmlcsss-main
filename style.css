@@ -66,3 +66,16 @@ nav ul li a:hover::after{
 
 color: #c4bbb1;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Kleinere tekst op kleine schermen */
+    }
+
+    nav ul {
+        flex-direction: column; /* Zet de knoppen onder elkaar */
+    }
+
+    .logo {
+        width: 100px; /* Maak het logo kleiner */
+    }
+}
