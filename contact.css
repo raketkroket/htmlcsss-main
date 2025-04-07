@@ -190,6 +190,7 @@ footer p { /*copyright teksr grootte*/
 @media (max-width: 768px) {
     body {
         font-size: 14px; /* kleienere tekst op kleien scherme */
+        
     }
 
     nav ul {
@@ -200,3 +201,37 @@ footer p { /*copyright teksr grootte*/
         width: 100px; /* maakt het logo kleienr */
     }
 }
+@media (min-width: 768px) and (max-width: 1324px) {
+    nav {
+      padding: 20px 40px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2b2b2b;
+    }
+  
+    .logo {
+      width: 120px;
+      margin: 0;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      gap: 30px;
+    }
+  
+    .contact-left p {
+      margin-left: 0;
+      padding-left: 10px;
+      text-align: left;
+    }
+  
+    .row {
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+  
+    .contact-left, .contact-right {
+      width: 100%;
+    }
+  }
+  
